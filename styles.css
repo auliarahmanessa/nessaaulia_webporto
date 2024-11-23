@@ -1,0 +1,317 @@
+/* Set global background to black and text color to white */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar styling */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #007bff;
+    
+}
+
+/* BAGIAN CV DOWNLOAD */
+/* Override specific sections */
+
+#cv-download {
+    height: 100vh; /* Atur tinggi section agar memenuhi layar penuh */
+    display: flex; /* Aktifkan flexbox */
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: center; /* Pusatkan secara horizontal */
+    text-align: center; /* Pusatkan teks */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Tambahkan bayangan teks */
+}
+
+header {
+    background: 
+        linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Gradient hitam dengan transparansi */
+        url('bgfirst.jpg'); /* Ganti path/to/your-image.jpg dengan path gambar Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Menyusun gambar di tengah */
+    background-blend-mode: overlay; /* Menggabungkan gradient dan gambar */
+    color: white; /* Agar teks tetap terlihat di atas background */
+}
+
+
+
+#cv-download h2 {
+    margin-bottom: 20px; /* Tambahkan jarak bawah pada judul */
+}
+
+#cv-download p {
+    margin-bottom: 30px; /* Tambahkan jarak bawah pada paragraf */
+}
+@media (max-width: 768px) {
+    #cv-download {
+        padding: 20px; /* Tambahkan padding untuk layar kecil */
+        text-align: center;
+    }
+
+    #cv-download h2 {
+        font-size: 1.8rem; /* Sesuaikan ukuran font */
+    }
+
+    #cv-download p {
+        font-size: 1rem; /* Sesuaikan ukuran paragraf */
+    }
+}
+
+.typing-text {
+    border-right: 2px solid #fff; /* Garis berkedip */
+    white-space: nowrap; /* Mencegah teks membungkus */
+    overflow: hidden; /* Menyembunyikan teks yang belum muncul */
+    animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+    animation-fill-mode: forwards; /* Menjaga posisi terakhir */
+}
+
+/* Animasi mengetik */
+@keyframes typing {
+    0% { width: 0; }
+    70% { width: 100%; }
+    85% { width: 60%; } /* Menghapus sebagian teks */
+    100% { width: 100%; } /* Menampilkan kembali teks sepenuhnya */
+}
+
+/* Animasi garis berkedip */
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+
+.profile-img {
+    width: 200px; /* Perbesar ukuran gambar */
+    height: 200px; /* Tinggi gambar juga diperbesar */
+    object-fit: cover;
+    margin-left: 20px; /* Geser gambar ke kanan */
+}
+
+
+
+#projects {
+    min-height: 100vh; /* Minimal memenuhi layar penuh jika konten sedikit */
+    padding: 50px 15px; /* Jarak antar elemen di dalam section */
+    display: flex; /* Mengaktifkan flexbox */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    justify-content: center; /* Pusatkan elemen secara horizontal */
+    padding: 50px 0; /* Gantikan dengan padding vertikal */
+    text-align: center;
+}
+
+
+
+#projects {
+    margin-bottom: 50px;
+}
+#contact {
+    margin-top: 50px;
+    padding: 50px 15px; /* Tambahkan padding agar terlihat rapi */
+}
+#projects h2 {
+    margin-bottom: 30px; /* Menambahkan ruang bawah pada judul */
+    font-size: 2rem; /* Ukuran font judul */
+}
+
+#projects .card {
+    background-color: #222; /* Warna latar belakang kartu proyek */
+    color: white; /* Warna teks dalam kartu */
+    margin-bottom: 20px; /* Menambahkan jarak antar kartu */
+}
+
+#projects .card-body {
+    text-align: left; /* Agar teks dalam kartu rata kiri */
+}
+
+#projects .btn-primary {
+    transition: background-color 0.3s ease;
+}
+
+#projects .btn-primary:hover {
+    background-color: #0056b3; /* Ubah warna tombol saat hover */
+}
+
+
+.card {
+    background-color: #222; /* Warna hitam untuk kartu proyek */
+    color: #fff;
+}
+
+/* Form styling */
+form input, form textarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+form input:focus, form textarea:focus {
+    background-color: #444;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    #projects {
+        padding-top: 50px; /* Menyesuaikan padding pada layar kecil */
+    }
+
+    #projects h2 {
+        font-size: 1.8rem; /* Menyesuaikan ukuran font untuk layar kecil */
+    }
+}
+
+
+/* Button styling for Download CV */
+#cv-download .btn-light {
+    transition: all 0.3s ease-in-out; /* Animasi smooth untuk semua properti */
+}
+
+#cv-download .btn-light:hover {
+    background-color: #ffcc00; /* Ubah warna latar belakang */
+    color: #0056b3; /* Warna teks saat hover */
+    transform: scale(1.1); /* Perbesar tombol saat hover */
+}
+
+#cv-download .btn-light i {
+    transition: transform 0.3s ease; /* Animasi rotasi ikon */
+}
+
+#cv-download .btn-light:hover i {
+    transform: rotate(-20deg); /* Rotasi ikon saat hover */
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #aaa;
+}
+
+/* Pastikan semua section menggunakan lebar penuh */
+section {
+    margin-bottom: 50px; /* Tambahkan jarak antar section */
+}
+
+
+#projects .card {
+    margin-bottom: 20px; /* Jarak antar kartu proyek */
+}
+
+
+/* Berikan padding konsisten untuk semua section */
+.container-fluid {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Tambahkan lebih banyak padding untuk bagian tertentu */
+#cv-download, #about, #projects, #contact {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#about img {
+    max-width: 300px; /* Batasi ukuran maksimum gambar */
+    margin-bottom: 20px; /* Tambahkan jarak bawah pada gambar */
+}
+
+#about .col-md-8 {
+    padding-top: 20px; /* Beri jarak antara teks dan gambar */
+}
+
+@media (max-width: 768px) {
+    #about img {
+        max-width: 100%; /* Gambar mengambil lebar penuh di layar kecil */
+    }
+
+    #projects .card {
+        margin-bottom: 30px; /* Tambahkan jarak ekstra untuk kartu proyek di layar kecil */
+    }
+}
+
+#about {
+    height: 100vh; /* Membuat tinggi section 100% dari layar */
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Pusatkan elemen secara vertikal */
+    justify-content: center; /* Pusatkan elemen secara horizontal */
+    padding-top: 100px; /* Memberikan ruang ekstra di atas agar lebih ke bawah */
+    text-align: center; /* Pusatkan teks */
+}
+
+#about h2 {
+    margin-bottom: 20px; /* Menambahkan ruang bawah pada judul */
+}
+
+#about p {
+    font-size: 1.2rem; /* Sesuaikan ukuran font paragraf */
+}
+@media (max-width: 768px) {
+    #about {
+        padding-top: 50px; /* Menyesuaikan padding pada layar kecil */
+    }
+
+    #about h2 {
+        font-size: 1.8rem; /* Menyesuaikan ukuran font untuk layar kecil */
+    }
+
+    #about p {
+        font-size: 1rem; /* Menyesuaikan ukuran paragraf pada layar kecil */
+    }
+}
+
+/* Responsive adjustments */
+#about, #projects {
+    text-align: center; /* Default untuk layar kecil */
+}
+
+@media (min-width: 768px) {
+    #about, #projects {
+        text-align: start; /* Kembali ke rata kiri untuk layar besar */
+    }
+}
+
+@media (max-width: 768px) {
+    #projects {
+        margin-bottom: 30px;
+    }
+
+    #contact {
+        margin-top: 30px;
+        padding: 30px 10px;
+    }
+}
+
+/* footer */
+/* Styling for the container of social icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 10px; /* Adds spacing between the icons */
+}
+
+/* Styling for individual icon boxes */
+.icon-box {
+    display: flex; /* Activates Flexbox */
+    align-items: center; /* Centers icon vertically */
+    justify-content: center; /* Centers icon horizontally */
+    width: 50px; /* Set width of the box */
+    height: 50px; /* Set height of the box */
+    border: 1px solid #fff; /* Border color and style */
+    color: #fff; /* Default icon color */
+    border-radius: 8px; /* Slightly rounded corners */
+    transition: all 0.3s ease; /* Smooth hover animation */
+    text-decoration: none; /* Remove underline on links */
+}
+
+/* Styling for hover effect */
+.icon-box:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: #000; /* Change icon color on hover */
+    border-color: #000; /* Change border color on hover */
+    transform: scale(1.1); /* Slightly enlarge the box on hover */
+}
+
+/* Styling for icons inside the boxes */
+
+
